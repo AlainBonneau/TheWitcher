@@ -1,14 +1,14 @@
 import MyNavbar from "./components/Navbar/Navbar";
-import "./App.scss"; // Assurez-vous de gérer les styles ici
+import Images from "./components/Images/Images";
+import "./App.scss";
 
 const creatures = [
   {
-    // NE PAS OUBLIER DE FAIRE LE LIEN DES IMAGES !!!
     id: 1,
     name: "Leshen",
     description:
       "Les leshens sont des créatures anciennes liées aux forêts. Ils peuvent invoquer des animaux et contrôler les arbres.",
-    image: "/images/leshen.jpg",
+    image: "./src/assets/sliderImg/leshen.webp",
     vulnerabilities: ["Feu", "Dimeritium", "Argent"],
   },
   {
@@ -16,15 +16,15 @@ const creatures = [
     name: "Griffon",
     description:
       "Les griffons sont des créatures hybrides, mi-lion mi-aigle, féroces et puissants.",
-    image: "/images/griffon.jpg",
+    image: "./src/assets/sliderImg/griffon.webp",
     vulnerabilities: ["Arbalète", "Argent", "Huile contre hybrides"],
   },
   {
     id: 3,
-    name: "Strige",
+    name: "Loup-garou",
     description:
-      "La strige est une créature maudite, mi-humaine, mi-bête, connue pour ses griffes acérées et sa force terrifiante.",
-    image: "/images/strige.jpg",
+      "Les loups-garous sont des créatures maudites, mi-homme mi-loup, qui se transforment à la pleine lune.",
+    image: "./src/assets/sliderImg/loupgarou.webp",
     vulnerabilities: ["Argent", "Huile contre bêtes", "Lune"],
   },
   {
@@ -32,16 +32,8 @@ const creatures = [
     name: "Nekker",
     description:
       "Les nekkers sont des créatures petites, rapides et vicieuses, souvent trouvées en groupes dans les cavernes ou les forêts.",
-    image: "/images/nekker.jpg",
+    image: "./src/assets/sliderImg/nekker.webp",
     vulnerabilities: ["Igni", "Huile contre ogroïdes", "Bombes"],
-  },
-  {
-    id: 5,
-    name: "Kikimorrhe",
-    description:
-      "Les kikimorrhes sont des créatures insectoïdes extrêmement dangereuses vivant dans les marais et les souterrains.",
-    image: "/images/kikimorrhe.jpg",
-    vulnerabilities: ["Argent", "Feu", "Huile contre insectoïdes"],
   },
 ];
 
@@ -52,8 +44,10 @@ function App() {
         <MyNavbar />
       </header>
       <main id="main">
-        {/* Faire le slider d'images */}
-        <section className="slider"></section>
+        {/* Finir le slider d'images */}
+        <section className="slider">
+          <Images images={creatures} />
+        </section>
       </main>
     </div>
   );
