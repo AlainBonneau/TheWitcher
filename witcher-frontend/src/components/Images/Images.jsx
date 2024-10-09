@@ -5,6 +5,7 @@ export default function Images({ images }) {
     <div className="img-container pt-12 flex justify-center">
       {images.map((image) => (
         <Image
+        className="p-4"
           key={image.id}
           isZoomed
           width={240}

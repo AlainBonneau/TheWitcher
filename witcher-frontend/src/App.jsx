@@ -1,5 +1,6 @@
 import MyNavbar from "./components/Navbar/Navbar";
 import Images from "./components/Images/Images";
+import Stats from "./components/Stats/Stats";
 import "./App.scss";
 
 const creatures = [
@@ -47,6 +48,9 @@ function App() {
         {/* Finir le slider d'images */}
         <section className="slider">
           <Images images={creatures} />
+        </section>
+        <section className="stats">
+          <Stats />
         </section>
       </main>
     </div>
