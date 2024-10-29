@@ -1,6 +1,8 @@
 import MyNavbar from "./components/Navbar/Navbar";
 import Images from "./components/Images/Images";
 import Stats from "./components/Stats/Stats";
+import SignUp from "./components/SignUp/SignUp";
+import Price from "./components/Price/Price";
 import "./App.scss";
 
 const creatures = [
@@ -51,6 +53,12 @@ function App() {
         </section>
         <section className="stats">
           <Stats />
+        </section>
+        <section className="signup">
+          <SignUp />
+        </section>
+        <section className="price">
+          <Price />
         </section>
       </main>
     </div>
